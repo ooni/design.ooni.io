@@ -1,25 +1,27 @@
+import ColorPalette from '../components/color-palette'
+
+import { theme, Flex, Box } from 'ooni-components'
+
 # Colors
 
 ## Brand colors
 
-```.jsx
 <div>
   <Flex wrap>
   <Box w={1/2}>
   <ColorPalette
-    color={colors.OONI_BLUE}
-    name="OONI Blue"
+    color={theme.colors.blue5}
+    name="OONI Blue (blue5)"
   />
   </Box>
   <Box w={1/2}>
   <ColorPalette
-    color={colors.LIGHT_BLUE}
-    name="Light Blue"
+    color={theme.colors.blue3}
+    name="Light Blue (blue3)"
   />
   </Box>
   </Flex>
 </div>
-```
 
 ## Palette
 
@@ -36,263 +38,209 @@ similar to color blind people). Keep it accessible.
 
 ### Gray
 
-```.jsx
-<div>
-  <Flex wrap>
-  {Array.from(Array(10).keys()).map(n => {
-    const colorName = 'gray'
-    return (
-      <Box w={1/2}>
-      <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
-        name={`${colorName} ${n}`}
-      />
-      </Box>
-    )
-  })}
-  </Flex>
-</div>
-```
+<Flex wrap>
+{Array.from(Array(10).keys()).map(n => {
+  const colorName = 'gray'
+  return (
+    <Box w={1/2}>
+    <ColorPalette
+      color={theme.colors[`${colorName}${n}`]}
+      name={`${colorName} ${n}`}
+    />
+    </Box>
+  )
+})}
+</Flex>
 
 ### Blue
 
-```.jsx
-<div>
-  <Flex wrap>
+<Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'blue'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
-  </Flex>
-</div>
-```
+</Flex>
 
 
 ### Indigo
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'indigo'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
-
-
 
 ### Violet
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'violet'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
 
 ### Fuschia
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'fuschia'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
 
 ### Pink
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'pink'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
 
 ### Red
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'red'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
 
 ### Orange
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'orange'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
 
 ### Yellow
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'yellow'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
 
 ### Lime
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'lime'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
 
 ### Green
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'green'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
 
 ### Teal
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'teal'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```
 
 ### Cyan
 
-```.jsx
-<div>
   <Flex wrap>
   {Array.from(Array(10).keys()).map(n => {
     const colorName = 'cyan'
     return (
       <Box w={1/2}>
       <ColorPalette
-        color={colors.palette[`${colorName}${n}`]}
+        color={theme.colors[`${colorName}${n}`]}
         name={`${colorName} ${n}`}
       />
       </Box>
     )
   })}
   </Flex>
-</div>
-```

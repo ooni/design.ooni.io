@@ -8,17 +8,27 @@ import {
   Link,
   Flex,
   Box,
-  Container
+  Container,
+  Text,
+  Heading
 } from 'ooni-components'
 
 const StyledNavItem = styled.div`
   display: block;
+  a {
+    color: ${props => props.active == true ? props.theme.colors.blue3 : props.theme.colors.white};
+    text-decoration: none;
+  }
+  a:hover {
+    color: ${props => props.theme.colors.blue3};
+    text-decoration: none;
+  }
 `
 
 const NavItemComponent = ({router, label, href}) => {
   const active = router.pathname === href
   return (
-    <StyledNavItem>
+    <StyledNavItem active={active}>
       <Link href={href}>
         <NLink href={href}>
           {label}
@@ -30,15 +40,23 @@ const NavItemComponent = ({router, label, href}) => {
 const NavItem = withRouter(NavItemComponent)
 
 const StyledNavBar = styled.div`
-  background-color: ${props => props.color || props.theme.colors.gray5};
+  background-color: ${props => props.theme.colors.gray7};
   padding-top: 16px;
   padding-bottom: 20px;
+  height: 100%;
   min-height: 100vh;
+`
+
+const SiteTitle = styled(Heading)`
+font-weight: 300;
+font-size: 24px;
+color: ${props => props.theme.colors.white};
 `
 
 const NavBar = ({color}) => (
   <StyledNavBar color={color}>
     <Container>
+      <SiteTitle>OONI Design</SiteTitle>
       <NavItem label='Home' href='/' />
       <NavItem label='Getting Started' href='/getting-started' />
       <NavItem label='Typography' href='/typography' />

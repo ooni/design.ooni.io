@@ -5,3 +5,4 @@ package-lock.json
 dist
 .next/
 yarn-error.log
+/out

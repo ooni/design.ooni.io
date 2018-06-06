@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "build:static": "yarn run build && next export",
     "start": "next start"
   },
   "dependencies": {

@@ -61,6 +61,7 @@ const NavBar = ({color}) => (
       <NavItem label='Getting Started' href='/getting-started' />
       <NavItem label='Typography' href='/typography' />
       <NavItem label='Colors' href='/colors' />
+      <NavItem label='Icons' href='/icons' />
       <NavItem label='Brand' href='/brand' />
     </Container>
   </StyledNavBar>

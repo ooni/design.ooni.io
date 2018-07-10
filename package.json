@@ -15,6 +15,7 @@
     "ooni-components": "^0.1.0-rc.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-icons": "^2.2.7",
     "remark-emoji": "^2.0.1",
     "remark-images": "^0.8.1",
     "styled-components": "2.4.1",

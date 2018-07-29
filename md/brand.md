@@ -38,7 +38,7 @@ logo, in the canonical blue.
 
 Depending on the length of the sub-brand, the font size might differ slightly.
 
-![OONI Sub-brands](/static/images/XXX.svg)
+![OONI Sub-brands](/static/images/sub-brands.svg)
 
 
 ### Logo don'ts

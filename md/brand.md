@@ -26,7 +26,7 @@ blue or other colors apart the canonical blue.
 The logo should be surrounded by blank space at least as wide as the 'I'
 character. To measure this vertically, rotate the 'I' by 90 degrees.
 
-![OONI Logo spacing](/static/images/XXX.svg)
+![OONI Logo spacing](/static/images/minimum-spacing.svg)
 
 ### Sub brands
 

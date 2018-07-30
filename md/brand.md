@@ -26,7 +26,7 @@ blue or other colors apart the canonical blue.
 The logo should be surrounded by blank space at least as wide as the 'I'
 character. To measure this vertically, rotate the 'I' by 90 degrees.
 
-![OONI Logo spacing](/static/images/XXX.svg)
+![OONI Logo spacing](/static/images/minimum-spacing.svg)
 
 ### Sub brands
 
@@ -38,7 +38,7 @@ logo, in the canonical blue.
 
 Depending on the length of the sub-brand, the font size might differ slightly.
 
-![OONI Sub-brands](/static/images/XXX.svg)
+![OONI Sub-brands](/static/images/sub-brands.svg)
 
 
 ### Logo don'ts
@@ -46,7 +46,7 @@ Depending on the length of the sub-brand, the font size might differ slightly.
 We love it when people show the OONI logo, however we kindly ask you to not use
 it in the following ways.
 
-![OONI Logo don'ts](/static/images/XXX.svg)
+![OONI Logo don'ts](/static/images/donts.svg)
 
 ## Questions
 

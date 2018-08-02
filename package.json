@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "build:static": "yarn run build && next export",
+    "build:static": "yarn run build && next export && cp _redirects out/_redirects",
     "start": "next start"
   },
   "dependencies": {
